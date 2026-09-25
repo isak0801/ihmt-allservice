@@ -1,80 +1,21 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
-
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>IHMT Allservice | Trädgårdsarbete & gräsklippning i Kungälv</title>
+    <title>IHMT Allservice | Trädgård, bortforsling & rengöring</title>
 
     <meta
         name="description"
-        content="IHMT Allservice erbjuder gräsklippning, trädgårdsarbete, altantvätt och bortforsling i Kungälv och Göteborg för privatpersoner och företag."
+        content="IHMT Allservice hjälper privatpersoner och företag i Kungälv, Göteborg med omnejd med trädgårdsarbete, bortforsling, rengöring och praktiska tjänster."
     >
-
-    <!-- OPEN GRAPH – DELNING PÅ FACEBOOK / MESSENGER -->
-    <meta property="og:title" content="IHMT Allservice | Trädgårdsarbete & gräsklippning i Kungälv">
-
-    <meta
-        property="og:description"
-        content="IHMT Allservice erbjuder gräsklippning, trädgårdsarbete, altantvätt och bortforsling i Kungälv och Göteborg för privatpersoner och företag."
-    >
-
-    <meta property="og:type" content="website">
-
-    <meta property="og:locale" content="sv_SE">
-
-    <!-- TWITTER / X -->
-    <meta name="twitter:card" content="summary">
-
-    <meta
-        name="twitter:title"
-        content="IHMT Allservice | Trädgårdsarbete & gräsklippning i Kungälv"
-    >
-
-    <meta
-        name="twitter:description"
-        content="Gräsklippning, trädgårdsarbete, altantvätt och bortforsling i Kungälv och Göteborg."
-    >
-
-
-    <!-- STRUKTURERAD DATA – IHMT ALLSERVICE -->
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "IHMT Allservice",
-        "telephone": [
-            "+46761916109",
-            "+46707889238"
-        ],
-        "email": "ihmtallservice@gmail.com",
-        "description": "IHMT Allservice erbjuder gräsklippning, trädgårdsarbete, altantvätt och bortforsling för privatpersoner och företag i Kungälv och Göteborg.",
-        "areaServed": [
-            {
-                "@type": "City",
-                "name": "Kungälv"
-            },
-            {
-                "@type": "City",
-                "name": "Göteborg"
-            }
-        ],
-        "serviceType": [
-            "Gräsklippning",
-            "Trädgårdsarbete",
-            "Altantvätt",
-            "Bortforsling"
-        ]
-    }
-    </script>
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
@@ -83,593 +24,835 @@
     >
 
     <link rel="stylesheet" href="styles.css">
-
 </head>
-
 
 <body>
 
-    <!-- HEADER -->
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-    <header class="site-header">
+<header class="site-header" id="siteHeader">
 
-        <div class="header-inner">
+    <div class="header-inner">
 
-            <a
-                href="index.html"
-                class="logo"
-                aria-label="IHMT Allservice – startsida"
-            >
+        <a href="index.html" class="logo" aria-label="IHMT Allservice">
+            <img src="bilder/logo.png" alt="IHMT Allservice">
+        </a>
 
-                <img
-                    src="bilder/header-logo.png"
-                    alt="IHMT Allservice logotyp"
-                >
+        <nav class="desktop-nav">
+            <a href="#start">Start</a>
+            <a href="#om-oss">Om oss</a>
+            <a href="#tjanster">Tjänster</a>
+            <a href="#kontakt" class="nav-cta">Begär offert</a>
+        </nav>
 
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Öppna meny"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <nav>
+
+        <a href="#start">Start</a>
+
+        <a href="#om-oss">Om oss</a>
+
+        <a href="#tjanster">Tjänster</a>
+
+        <a href="#jobb">Våra jobb</a>
+
+        <a href="#kontakt" class="mobile-menu-cta">
+            Begär offert
+        </a>
+
+    </nav>
+
+</div>
+
+
+<main>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="start">
+
+    <div class="hero-image"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-label">
+            IHMT ALLSERVICE · KUNGÄLV & GÖTEBORG
+        </p>
+
+        <h1>
+            Vi tar hand om jobbet.
+        </h1>
+
+        <p class="hero-subtitle">
+            Trädgård, rengöring, bortforsling och annat praktiskt.
+            Vi hjälper dig få jobbet gjort – enkelt och ordentligt.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#kontakt" class="button button-green">
+                Begär offert
             </a>
 
-
-            <nav class="main-nav">
-
-                <a href="index.html" class="nav-button">
-                    Start
-                </a>
-
-                <a href="om-oss.html" class="nav-button">
-                    Om oss
-                </a>
-
-                <a href="tjanster.html" class="nav-button">
-                    Tjänster & priser
-                </a>
-
-                <a
-                    href="mailto:ihmtallservice@gmail.com"
-                    class="nav-button nav-button-primary"
-                >
-                    Begär offert
-                </a>
-
-            </nav>
+            <a href="tel:0707889238" class="button button-outline">
+                070-788 92 38
+            </a>
 
         </div>
 
-    </header>
+    </div>
+
+    <div class="hero-scroll">
+        <span></span>
+        Scrolla
+    </div>
+
+</section>
 
 
-    <main>
+<!-- =====================================================
+     INTRO / TRUST
+===================================================== -->
 
-        <!-- HERO -->
+<section class="intro-section">
 
-        <section class="hero">
+    <div class="intro-top">
 
-            <div class="hero-overlay"></div>
+        <p class="section-label">
+            DET PRAKTISKA
+        </p>
 
-            <div class="hero-content">
+        <h2>
+            Ett företag för jobbet<br>
+            du inte vill göra själv.
+        </h2>
 
-                <span class="eyebrow">
-                    IHMT ALLSERVICE · KUNGÄLV & GÖTEBORG
-                </span>
+        <p class="intro-text">
+            IHMT Allservice hjälper privatpersoner, företag och
+            fastighetsägare med allt från trädgårdsarbete och
+            rengöring till bortforsling och rensning.
+        </p>
 
-                <h1>
-                    Vi hjälper dig<br>
-                    med det som<br>
-                    behöver göras.
-                </h1>
+    </div>
+
+    <div class="trust-row">
+
+        <div class="trust-item">
+            <strong>F-skatt</strong>
+            <span>Godkända för F-skatt</span>
+        </div>
+
+        <div class="trust-item">
+            <strong>Moms</strong>
+            <span>Momsregistrerade</span>
+        </div>
+
+        <div class="trust-item">
+            <strong>RUT</strong>
+            <span>RUT på godkända tjänster</span>
+        </div>
+
+        <div class="trust-item">
+            <strong>Lokalt</strong>
+            <span>Kungälv · Göteborg med omnejd</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services-section" id="tjanster">
+
+    <div class="section-intro">
+
+        <p class="section-label">
+            VÅRA TJÄNSTER
+        </p>
+
+        <h2>
+            Det vi kan<br>
+            hjälpa dig med.
+        </h2>
+
+        <p>
+            Vi tar hand om både små och större uppdrag.
+            Behöver du hjälp med något som inte står här?
+            Hör av dig ändå.
+        </p>
+
+    </div>
+
+
+    <div class="service-list">
+
+
+        <article class="service-item">
+
+            <div class="service-image">
+                <img
+                    src="bilder/tradgardsarbete.jpg"
+                    alt="Trädgårdsarbete"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="service-content">
+
+                <span class="service-number">01</span>
+
+                <h3>
+                    Trädgård
+                </h3>
 
                 <p>
-                    Praktisk hjälp för privatpersoner och företag.
-                    Vi erbjuder bland annat gräsklippning,
-                    trädgårdsarbete, altantvätt och bortforsling.
+                    Gräsklippning, trimning, rensning,
+                    beskärning och annat löpande arbete
+                    för att hålla utemiljön i ordning.
                 </p>
 
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="mailto:ihmtallservice@gmail.com"
-                        class="button button-primary"
-                    >
-                        Begär offert
-                    </a>
-
-                    <a
-                        href="tjanster.html"
-                        class="button button-light"
-                    >
-                        Se våra tjänster
-                    </a>
-
-                </div>
+                <a href="tjanster.html" class="service-link">
+                    Läs mer →
+                </a>
 
             </div>
 
-        </section>
+        </article>
 
 
-        <!-- OM IHMT -->
+        <article class="service-item">
 
-        <section class="intro">
-
-            <div class="intro-grid">
-
-                <div class="intro-text">
-
-                    <span class="eyebrow">
-                        OM IHMT ALLSERVICE
-                    </span>
-
-                    <h2>
-                        Praktisk hjälp<br>
-                        när du behöver den.
-                    </h2>
-
-                    <p>
-                        Vi är två unga företagare som driver
-                        IHMT Allservice med fokus på praktiskt
-                        arbete, noggrannhet och bra service.
-                    </p>
-
-                    <p>
-                        Oavsett om du behöver hjälp med gräsmattan,
-                        trädgården, altanen eller bortforsling
-                        försöker vi göra det enkelt för dig
-                        att få jobbet gjort.
-                    </p>
-
-                    <a href="om-oss.html" class="text-link">
-                        Läs mer om oss →
-                    </a>
-
-                </div>
-
-
-                <div class="intro-highlight">
-
-                    <span class="highlight-title">
-                        IHMT
-                    </span>
-
-                    <h3>
-                        Enkelt.<br>
-                        Noggrant.<br>
-                        Personligt.
-                    </h3>
-
-                    <p>
-                        Vi tar varje uppdrag på allvar och strävar
-                        efter att leverera ett resultat som du
-                        som kund blir nöjd med.
-                    </p>
-
-                </div>
-
+            <div class="service-image">
+                <img
+                    src="bilder/altantvatt.jpg"
+                    alt="Tvätt av altan och uteplats"
+                    loading="lazy"
+                >
             </div>
 
-        </section>
+            <div class="service-content">
 
+                <span class="service-number">02</span>
 
-        <!-- TJÄNSTER -->
-
-        <section class="home-services">
-
-            <div class="section-heading">
-
-                <div>
-
-                    <span class="eyebrow">
-                        VÅRA TJÄNSTER
-                    </span>
-
-                    <h2>
-                        Vad kan vi hjälpa dig med?
-                    </h2>
-
-                </div>
+                <h3>
+                    Rengöring
+                </h3>
 
                 <p>
-                    Praktiska tjänster för privatpersoner
-                    och företag.
+                    Vi rengör altaner, uteplatser och andra
+                    ytor som behöver fräschas upp.
+                </p>
+
+                <a href="tjanster.html" class="service-link">
+                    Läs mer →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="service-item">
+
+            <div class="service-image">
+                <img
+                    src="bilder/bortforsling.jpg"
+                    alt="Bortforsling"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="service-content">
+
+                <span class="service-number">03</span>
+
+                <h3>
+                    Bortforsling
+                </h3>
+
+                <p>
+                    Vi hämtar och kör bort trädgårdsavfall,
+                    möbler, skräp och annat som behöver
+                    försvinna.
+                </p>
+
+                <a href="tjanster.html" class="service-link">
+                    Läs mer →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="service-item">
+
+            <div class="service-image">
+                <img
+                    src="bilder/grasklippning.jpg"
+                    alt="Gräsklippning"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="service-content">
+
+                <span class="service-number">04</span>
+
+                <h3>
+                    Rensning & hjälp
+                </h3>
+
+                <p>
+                    Förråd, garage, uteplatser och andra
+                    ytor som behöver rensas, bäras eller
+                    få ordning på.
+                </p>
+
+                <a href="tjanster.html" class="service-link">
+                    Läs mer →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="section-button">
+
+        <a href="tjanster.html" class="button button-dark">
+            Se alla tjänster
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="about-section" id="om-oss">
+
+    <div class="about-image">
+
+        <img
+            src="bilder/om-oss.jpg"
+            alt="IHMT Allservice"
+            loading="lazy"
+        >
+
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-label">
+            OM IHMT
+        </p>
+
+        <h2>
+            Vi gillar när<br>
+            saker blir gjorda.
+        </h2>
+
+        <p>
+            IHMT Allservice drivs av två unga entreprenörer
+            med fokus på att göra det enkelt för kunden.
+        </p>
+
+        <p>
+            Vi kommer överens om jobbet, dyker upp och
+            ser till att det blir ordentligt gjort.
+        </p>
+
+        <a href="om-oss.html" class="text-link">
+            Läs mer om oss →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     JOBS / BEFORE AFTER
+===================================================== -->
+
+<section class="jobs-section" id="jobb">
+
+    <div class="jobs-heading">
+
+        <div>
+
+            <p class="section-label">
+                VÅRA JOBB
+            </p>
+
+            <h2>
+                Från så här<br>
+                till så här.
+            </h2>
+
+        </div>
+
+        <p>
+            Några exempel på jobb vi har hjälpt våra kunder med.
+        </p>
+
+    </div>
+
+
+    <div class="job-grid">
+
+
+        <article class="job-card">
+
+            <div class="before-after">
+
+                <div class="job-photo">
+
+                    <img
+                        src="bilder/jobb1-fore.jpg"
+                        alt="Före arbetet"
+                        loading="lazy"
+                    >
+
+                    <span>Före</span>
+
+                </div>
+
+                <div class="job-photo">
+
+                    <img
+                        src="bilder/jobb1-efter.jpg"
+                        alt="Efter arbetet"
+                        loading="lazy"
+                    >
+
+                    <span>Efter</span>
+
+                </div>
+
+            </div>
+
+            <div class="job-info">
+
+                <h3>
+                    Uteplats & rensning
+                </h3>
+
+                <p>
+                    Rensning och återställning av kundens uteplats.
                 </p>
 
             </div>
 
+        </article>
 
-            <div class="service-cards">
 
+        <article class="job-card">
 
-                <!-- GRÄSKLIPPNING -->
+            <div class="before-after">
 
-                <a
-                    href="tjanster.html#grasklippning"
-                    class="service-card"
-                >
+                <div class="job-photo">
 
-                    <div class="service-card-top">
+                    <img
+                        src="bilder/jobb2-fore.jpg"
+                        alt="Före arbetet"
+                        loading="lazy"
+                    >
 
-                        <span>
-                            TJÄNST
-                        </span>
-
-                    </div>
-
-
-                    <div class="service-card-content">
-
-                        <h3>
-                            Gräsklippning
-                        </h3>
-
-                        <p>
-                            Regelbunden eller enstaka klippning
-                            av gräsmattor.
-                        </p>
-
-                        <span class="service-card-link">
-                            Läs mer →
-                        </span>
-
-                    </div>
-
-                </a>
-
-
-                <!-- TRÄDGÅRDSARBETE -->
-
-                <a
-                    href="tjanster.html#tradgardsarbete"
-                    class="service-card"
-                >
-
-                    <div class="service-card-top">
-
-                        <span>
-                            TJÄNST
-                        </span>
-
-                    </div>
-
-
-                    <div class="service-card-content">
-
-                        <h3>
-                            Trädgårdsarbete
-                        </h3>
-
-                        <p>
-                            Hjälp med praktiska arbeten
-                            i trädgården.
-                        </p>
-
-                        <span class="service-card-link">
-                            Läs mer →
-                        </span>
-
-                    </div>
-
-                </a>
-
-
-                <!-- ALTANTVÄTT -->
-
-                <a
-                    href="tjanster.html#altantvatt"
-                    class="service-card"
-                >
-
-                    <div class="service-card-top">
-
-                        <span>
-                            TJÄNST
-                        </span>
-
-                    </div>
-
-
-                    <div class="service-card-content">
-
-                        <h3>
-                            Altantvätt
-                        </h3>
-
-                        <p>
-                            Rengöring av altaner och
-                            uteplatser.
-                        </p>
-
-                        <span class="service-card-link">
-                            Läs mer →
-                        </span>
-
-                    </div>
-
-                </a>
-
-
-                <!-- BORTFORSLING -->
-
-                <a
-                    href="tjanster.html#bortforsling"
-                    class="service-card"
-                >
-
-                    <div class="service-card-top">
-
-                        <span>
-                            TJÄNST
-                        </span>
-
-                    </div>
-
-
-                    <div class="service-card-content">
-
-                        <h3>
-                            Bortforsling
-                        </h3>
-
-                        <p>
-                            Vi hjälper till att köra bort
-                            trädgårdsavfall och annat material.
-                        </p>
-
-                        <span class="service-card-link">
-                            Begär offert →
-                        </span>
-
-                    </div>
-
-                </a>
-
-
-            </div>
-
-
-            <div class="services-button-wrap">
-
-                <a
-                    href="tjanster.html"
-                    class="button button-white"
-                >
-                    Se alla tjänster & priser
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- F-SKATT / MOMS / RUT -->
-
-        <section class="business-info">
-
-            <div class="business-info-inner">
-
-
-                <div class="business-heading">
-
-                    <span class="eyebrow">
-                        IHMT ALLSERVICE
-                    </span>
-
-                    <h2>
-                        Trygg och enkel<br>
-                        service.
-                    </h2>
-
-                    <p>
-                        Vi har F-skatt och är momsregistrerade.
-                        För privatpersoner erbjuder vi även
-                        RUT-avdrag på godkända tjänster.
-                    </p>
+                    <span>Före</span>
 
                 </div>
 
+                <div class="job-photo">
 
-                <div class="info-badges">
+                    <img
+                        src="bilder/jobb2-efter.jpg"
+                        alt="Efter arbetet"
+                        loading="lazy"
+                    >
 
-
-                    <div class="info-badge">
-
-                        <strong>
-                            F-skatt
-                        </strong>
-
-                        <span>
-                            Registrerat företag
-                        </span>
-
-                    </div>
-
-
-                    <div class="info-badge">
-
-                        <strong>
-                            Moms
-                        </strong>
-
-                        <span>
-                            Momsregistrerade
-                        </span>
-
-                    </div>
-
-
-                    <div class="info-badge info-badge-rut">
-
-                        <strong>
-                            RUT
-                        </strong>
-
-                        <span>
-                            På godkända tjänster
-                        </span>
-
-                    </div>
-
+                    <span>Efter</span>
 
                 </div>
 
             </div>
 
-        </section>
+            <div class="job-info">
+
+                <h3>
+                    Uppfart & rengöring
+                </h3>
+
+                <p>
+                    Rengöring och uppfräschning av kundens uppfart.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
 
 
-        <!-- OFFERT -->
+<!-- =====================================================
+     PROCESS
+===================================================== -->
 
-        <section class="offer-section">
+<section class="process-section">
 
-            <div class="offer-box">
+    <div class="process-heading">
 
-                <div class="offer-content">
+        <p class="section-label">
+            ENKELT FRÅN BÖRJAN
+        </p>
 
-                    <span class="eyebrow">
-                        BEHÖVER DU HJÄLP?
-                    </span>
+        <h2>
+            Så fungerar det.
+        </h2>
 
-                    <h2>
-                        Berätta vad du behöver få gjort.
-                    </h2>
+    </div>
 
-                    <p>
-                        Kontakta oss så återkommer vi med
-                        information och offert.
-                    </p>
 
-                </div>
+    <div class="process-grid">
 
+        <div class="process-item">
+
+            <span>01</span>
+
+            <h3>
+                Hör av dig
+            </h3>
+
+            <p>
+                Ring eller skicka ett meddelande
+                och berätta vad du behöver hjälp med.
+            </p>
+
+        </div>
+
+
+        <div class="process-item">
+
+            <span>02</span>
+
+            <h3>
+                Vi kommer överens
+            </h3>
+
+            <p>
+                Vi går igenom jobbet och lämnar
+                ett tydligt pris eller offert.
+            </p>
+
+        </div>
+
+
+        <div class="process-item">
+
+            <span>03</span>
+
+            <h3>
+                Vi gör jobbet
+            </h3>
+
+            <p>
+                Vi kommer på avtalad tid och
+                tar hand om resten.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RUT / INFO
+===================================================== -->
+
+<section class="info-section">
+
+    <div class="info-content">
+
+        <p class="section-label">
+            BRA ATT VETA
+        </p>
+
+        <h2>
+            RUT när det<br>
+            är möjligt.
+        </h2>
+
+        <p>
+            På tjänster som omfattas av RUT-avdrag hjälper
+            vi dig med underlaget så att det blir enkelt
+            för dig som kund.
+        </p>
+
+        <div class="info-tags">
+
+            <span>F-skatt</span>
+            <span>Momsregistrerade</span>
+            <span>RUT</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact-section" id="kontakt">
+
+    <div class="contact-inner">
+
+        <div class="contact-main">
+
+            <p class="section-label">
+                HAR DU ETT JOBB?
+            </p>
+
+            <h2>
+                Berätta vad du behöver hjälp med.
+            </h2>
+
+            <p>
+                Skicka ett meddelande eller ring oss.
+                Vi återkommer så snart vi kan.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a
+                    href="tel:0707889238"
+                    class="button button-green"
+                >
+                    Ring 070-788 92 38
+                </a>
 
                 <a
                     href="mailto:ihmtallservice@gmail.com"
-                    class="offer-button"
+                    class="button button-outline-dark"
                 >
-
-                    <span>
-                        Begär offert
-                    </span>
-
-                    <strong>
-                        →
-                    </strong>
-
+                    Skicka e-post
                 </a>
 
             </div>
 
-        </section>
-
-    </main>
+        </div>
 
 
-    <!-- FOOTER -->
-
-    <footer class="site-footer">
-
-        <div class="footer-grid">
-
+        <div class="contact-details">
 
             <div>
-
-                <a
-                    href="index.html"
-                    class="footer-logo"
-                >
-
-                    <span>
-                        IHMT
-                    </span>
-
-                    <small>
-                        ALLSERVICE
-                    </small>
-
-                </a>
-
-                <p class="footer-text">
-                    Praktisk hjälp för privatpersoner
-                    och företag.
-                </p>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h4>
-                    Navigering
-                </h4>
-
-                <a href="index.html">
-                    Start
-                </a>
-
-                <a href="om-oss.html">
-                    Om oss
-                </a>
-
-                <a href="tjanster.html">
-                    Tjänster & priser
-                </a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h4>
-                    Kontakt
-                </h4>
-
-                <a href="tel:0761916109">
-                    0761-91 61 09
-                </a>
-
+                <span>Telefon</span>
                 <a href="tel:0707889238">
-                    0707-88 92 38
+                    070-788 92 38
                 </a>
+            </div>
 
+            <div>
+                <span>E-post</span>
                 <a href="mailto:ihmtallservice@gmail.com">
                     ihmtallservice@gmail.com
                 </a>
-
             </div>
 
-
-            <div class="footer-column">
-
-                <h4>
-                    Företagsinformation
-                </h4>
-
-                <p>
-                    Org.nr 969804-9799
-                </p>
-
-                <p>
-                    F-skatt & Moms
-                </p>
-
+            <div>
+                <span>Område</span>
+                <strong>
+                    Kungälv & Göteborg med omnejd
+                </strong>
             </div>
 
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+
+            <img
+                src="bilder/logo.png"
+                alt="IHMT Allservice"
+            >
+
+            <p>
+                Trädgård, rengöring, bortforsling
+                och praktisk hjälp.
+            </p>
 
         </div>
 
 
-        <div class="footer-bottom">
+        <div class="footer-links">
 
-            <span>
-                © 2026 IHMT Allservice
-            </span>
-
-            <span>
-                Praktisk hjälp. Tydligt utfört.
-            </span>
+            <a href="#start">Start</a>
+            <a href="#om-oss">Om oss</a>
+            <a href="#tjanster">Tjänster</a>
+            <a href="#jobb">Våra jobb</a>
+            <a href="#kontakt">Kontakt</a>
 
         </div>
 
-    </footer>
 
+        <div class="footer-contact">
+
+            <a href="tel:0707889238">
+                070-788 92 38
+            </a>
+
+            <a href="mailto:ihmtallservice@gmail.com">
+                ihmtallservice@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 IHMT Allservice
+        </span>
+
+        <span>
+            F-skatt · Momsregistrerade
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+const header = document.getElementById("siteHeader");
+const menuButton = document.getElementById("mobileMenuButton");
+const mobileMenu = document.getElementById("mobileMenu");
+
+let lastScroll = 0;
+
+function handleScroll() {
+
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > 35) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+
+    lastScroll = currentScroll;
+}
+
+window.addEventListener("scroll", handleScroll, {
+    passive: true
+});
+
+
+menuButton.addEventListener("click", function () {
+
+    const isOpen = menuButton.classList.toggle("open");
+
+    mobileMenu.classList.toggle("open");
+
+    menuButton.setAttribute(
+        "aria-expanded",
+        isOpen ? "true" : "false"
+    );
+
+    document.body.classList.toggle(
+        "menu-open",
+        isOpen
+    );
+
+});
+
+
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        menuButton.classList.remove("open");
+
+        mobileMenu.classList.remove("open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        document.body.classList.remove("menu-open");
+
+    });
+
+});
+
+
+handleScroll();
+
+</script>
 
 </body>
-
 </html>
